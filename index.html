@@ -1242,26 +1242,19 @@
 
 					    <!-- BUY FORM -->
 							<div class="col-lg-2">
+								<div class="card shadow-none">
+									<div class="row row justify-content-center">
 
-								  <div class="card shadow-none">
-										<div class="row row justify-content-center">
-
-									<img src="./assets/img/crypto_logos/BTC_logo.svg" height="32" width="32" alt="btc">
-									<div class="" style="padding-left:10px;">
-									<h4>$47,599.30</h4>
+										<img src="./assets/img/crypto_logos/BTC_logo.svg" height="32" width="32" alt="btc">
+										<div class="" style="padding-left:10px;">
+											<h4 id="BTC_best_buying_price" ></h4>
+										</div>
+									</div>
+									<div class="row justify-content-center">
+										<p id="BTC_best_buying_position"></p>
+									</div>
 								</div>
-
 							</div>
-							<div class="row justify-content-center">
-								<p>Best buying price at Binance.US</p>
-							</div>
-
-
-
-
-								  </div>
-
-						  </div>
 
 
 							<div class="col-lg-2">
@@ -1271,12 +1264,12 @@
 
 									<img src="./assets/img/crypto_logos/ETH_logo.svg" height="32" width="32" alt="eth">
 									<div class="" style="padding-left:10px;">
-									<h4>$3,167.65</h4>
+									<h4  id="ETH_best_buying_price" ></h4>
 								</div>
 
 							</div>
 							<div class="row justify-content-center">
-								<p>Best buying price at BitFlyer</p>
+								<p  id="ETH_best_buying_position" ></p>
 							</div>
 
 
@@ -1294,12 +1287,12 @@
 
 									<img src="./assets/img/crypto_logos/DOGECOIN_logo.svg" height="32" width="32" alt="dogecoin">
 									<div class="" style="padding-left:10px;">
-									<h4>$0.2400</h4>
+									<h4  id="DOGECOIN_best_buying_price" ></h4>
 								</div>
 
 							</div>
 							<div class="row justify-content-center">
-								<p>Best buying price at CoinBase</p>
+								<p id="DOGECOIN_best_buying_position" ></p>
 							</div>
 
 
@@ -1318,12 +1311,12 @@
 
 									<img src="./assets/img/crypto_logos/ADA_logo.svg" height="32" width="32" alt="ada">
 									<div class="" style="padding-left:10px;">
-									<h4>$2.3748</h4>
+									<h4  id="ADA_best_buying_price" ></h4>
 								</div>
 
 							</div>
 							<div class="row justify-content-center">
-								<p>Best buying price at KuCoin</p>
+								<p  id="ADA_best_buying_position" ></p>
 							</div>
 
 
@@ -1644,7 +1637,7 @@
 								<div class="col">
 									<div class="input-group mb-3 border-0 justify-content-center">
 										<div class="btn-group ">
-											<input type="text" id="email" class="form-control borders-0" style="border-width:0px; border: 0; width: 100%;" placeholder="Email" aria-label="Recipient&#39;s username">
+											<input type="text" id="email" class="form-control borders-0" style="border-width:0px; border: 0; width: 100%;" placeholder="Email" aria-label="Recipient's username">
 											<button class="btn btn-outline-primary" style="background-color:white; border-width:0px; border: 0;" type="submit" id="submitNewsLetter">Send</button>
 										</div>
 									</div>
@@ -1709,13 +1702,17 @@
 	<script src="https://tradervise.com/assets/plugins/jquery-nice-select/js/jquery.nice-select.js"></script>
 	<script src="https://tradervise.com/assets/plugins/jquery-nice-select/js/nice-select.js"></script>
 
+	<!-- ENV Setting -->
+
+  	<script src="./env.js"></script>
+
 	<!-- custom js -->
 	<script src="https://tradervise.com/assets/js/custom.js"></script>
 
 	<!-- Internal Newsticker js-->
 	<script src="https://tradervise.com/assets/plugins/newsticker/jquery.jConveyorTicker.js"></script>
 	<script src="https://tradervise.com/assets/js/newsticker.js"></script>
-
+  <script src="./get_best_buying_price_data.js"></script>
 
 	
 
@@ -1735,174 +1732,174 @@
 					name="LanguageMenu_textid" type="text" id="LanguageMenu_textid" style="display:none;"
 					autocomplete="on" onclick="this.select()"> <span onselectstart="return false" tabindex="0"
 					class="DDStyle" id="__LanguageMenu_header"
-					onclick="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);"
-					onkeydown="return LanguageMenu &amp;&amp; !LanguageMenu.Show(&#39;__LanguageMenu_popup&#39;, event);">English</span>
+					onclick="return LanguageMenu && !LanguageMenu.Show('__LanguageMenu_popup', event);"
+					onkeydown="return LanguageMenu && !LanguageMenu.Show('__LanguageMenu_popup', event);">English</span>
 				<div style="position:relative;text-align:left;left:0;">
-					<div style="position:absolute;width:;left:0px;">
+					<div style="position:absolute;left:0px;">
 						<div class="DDStyle" style="display:none;" id="__LanguageMenu_popup">
-							<table id="LanguageMenu" border="0">
+							<table id="LanguageMenu" >
 								<tbody>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ar&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ar');"
 												ondragstart="LanguageMenu.ondragstart(event);"
 												href="https://tradervise.com/#ar">Arabic</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;he&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('he');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#he">Hebrew</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pl&#39;);"
+												href=index.html/#he">Hebrew</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('pl');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#pl">Polish</a></td>
+												href=index.html/#pl">Polish</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;bg&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('bg');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#bg">Bulgarian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hi&#39;);"
+												href="index.html/#bg">Bulgarian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('hi');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#hi">Hindi</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;pt&#39;);"
+												href="index.html/#hi">Hindi</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('pt');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#pt">Portuguese</a></td>
+												href="index.html/#pt">Portuguese</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ca&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ca');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ca">Catalan</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mww&#39;);"
+												href="index.html/#ca">Catalan</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('mww');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#mww">Hmong Daw</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ro&#39;);"
+												href="index.html/#mww">Hmong Daw</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ro');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ro">Romanian</a></td>
+												href="index.html/#ro">Romanian</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHS&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('zh-CHS');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#zh-CHS">Chinese Simplified</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;hu&#39;);"
+												href="index.html/#zh-CHS">Chinese Simplified</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('hu');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#hu">Hungarian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ru&#39;);"
+												href="index.html/#hu">Hungarian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ru');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ru">Russian</a></td>
+												href="index.html/#ru">Russian</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;zh-CHT&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('zh-CHT');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#zh-CHT">Chinese Traditional</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;id&#39;);"
+												href="index.html/#zh-CHT">Chinese Traditional</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('id');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#id">Indonesian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sk&#39;);"
+												href="index.html/#id">Indonesian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('sk');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#sk">Slovak</a></td>
+												href="index.html/#sk">Slovak</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cs&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('cs');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#cs">Czech</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;it&#39;);"
+												href="index.html/#cs">Czech</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('it');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#it">Italian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sl&#39;);"
+												href="index.html/#it">Italian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('sl');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#sl">Slovenian</a></td>
+												href="index.html/#sl">Slovenian</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;da&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('da');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#da">Danish</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ja&#39;);"
+												href="index.html/#da">Danish</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ja');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ja">Japanese</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;es&#39;);"
+												href="index.html/#ja">Japanese</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('es');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#es">Spanish</a></td>
+												href="index.html/#es">Spanish</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;nl&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('nl');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#nl">Dutch</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tlh&#39;);"
+												href="index.html/#nl">Dutch</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('tlh');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#tlh">Klingon</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;sv&#39;);"
+												href="index.html/#tlh">Klingon</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('sv');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#sv">Swedish</a></td>
+												href="index.html/#sv">Swedish</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;en&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('en');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#en">English</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ko&#39;);"
+												href="index.html/#en">English</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ko');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ko">Korean</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;th&#39;);"
+												href="index.html/#ko">Korean</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('th');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#th">Thai</a></td>
+												href="index.html/#th">Thai</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;et&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('et');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#et">Estonian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lv&#39;);"
+												href="index.html/#et">Estonian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('lv');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#lv">Latvian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;tr&#39;);"
+												href="index.html/#lv">Latvian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('tr');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#tr">Turkish</a></td>
+												href="index.html/#tr">Turkish</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fi&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('fi');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#fi">Finnish</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;lt&#39;);"
+												href="index.html/#fi">Finnish</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('lt');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#lt">Lithuanian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;uk&#39;);"
+												href="index.html/#lt">Lithuanian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('uk');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#uk">Ukrainian</a></td>
+												href="index.html/#uk">Ukrainian</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fr&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('fr');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#fr">French</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ms&#39;);"
+												href="index.html/#fr">French</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ms');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ms">Malay</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ur&#39;);"
+												href="index.html/#ms">Malay</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ur');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ur">Urdu</a></td>
+												href="index.html/#ur">Urdu</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;de&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('de');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#de">German</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;mt&#39;);"
+												href="index.html/#de">German</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('mt');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#mt">Maltese</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;vi&#39;);"
+												href="index.html/#mt">Maltese</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('vi');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#vi">Vietnamese</a></td>
+												href="index.html/#vi">Vietnamese</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;el&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('el');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#el">Greek</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;no&#39;);"
+												href="index.html/#el">Greek</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('no');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#no">Norwegian</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;cy&#39;);"
+												href="index.html/#no">Norwegian</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('cy');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#cy">Welsh</a></td>
+												href="index.html/#cy">Welsh</a></td>
 									</tr>
 									<tr>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;ht&#39;);"
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('ht');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#ht">Haitian Creole</a></td>
-										<td><a tabindex="-1" onclick="return LanguageMenu.onclick(&#39;fa&#39;);"
+												href="index.html/#ht">Haitian Creole</a></td>
+										<td><a tabindex="-1" onclick="return LanguageMenu.onclick('fa');"
 												ondragstart="LanguageMenu.ondragstart(event);"
-												href="https://tradervise.com/#fa">Persian</a></td>
+												href="index.html/#fa">Persian</a></td>
 										<td></td>
 									</tr>
 								</tbody>
@@ -1946,7 +1943,7 @@
 		</div>
 		<div id="EmbedTextboxDiv"> <input name="EmbedSnippetTextBox" type="text" id="EmbedSnippetTextBox"
 				readonly="readonly"
-				value="&lt;div id=&#39;MicrosoftTranslatorWidget&#39; class=&#39;Dark&#39; style=&#39;color:white;background-color:#555555&#39;&gt;&lt;/div&gt;&lt;script type=&#39;text/javascript&#39;&gt;setTimeout(function(){var s=document.createElement(&#39;script&#39;);s.type=&#39;text/javascript&#39;;s.charset=&#39;UTF-8&#39;;s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf(&#39;https&#39;) == 0)?&#39;https://ssl.microsofttranslator.com&#39;:&#39;http://www.microsofttranslator.com&#39;)+&#39;/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en&#39;;var p=document.getElementsByTagName(&#39;head&#39;)[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;"
+				value="&lt;div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'&gt;&lt;/div&gt;&lt;script type='text/javascript'&gt;setTimeout(function(){var s=document.createElement('script');s.type='text/javascript';s.charset='UTF-8';s.src=((location &amp;&amp; location.href &amp;&amp; location.href.indexOf('https') == 0)?'https://ssl.microsofttranslator.com':'http://www.microsofttranslator.com')+'/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&amp;ctf=true&amp;ui=true&amp;settings=manual&amp;from=en';var p=document.getElementsByTagName('head')[0]||document.documentElement;p.insertBefore(s,p.firstChild); },0);&lt;/script&gt;"
 				onclick="this.select()"> </div>
 		<div id="EmbedNoticeDiv"><span id="EmbedNoticeSpan">Enable collaborative features and customize widget: <a
 					href="http://www.bing.com/widget/translator" target="_blank">Bing Webmaster Portal</a></span></div>
