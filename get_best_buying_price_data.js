@@ -9,7 +9,7 @@ var Position = {
     'kucoin':'KuCoin'
 }
 
-var api_key = '7a2728a6a7mshbfbcb13bf45efc0p15d311jsnc8088cee3804';
+var api_key = 'bf7782ff39msha0f027b17c09017p1167fajsna9c72f563e6f';
 
 var names = [
     'BTC','ETH','ADA','DOGECOIN'
