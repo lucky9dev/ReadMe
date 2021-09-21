@@ -1,0 +1,86 @@
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #FFF;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+::placeholder {
+  color: gray;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: gray;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: gray;
+
+}
+#crypto_buy {
+color: red;
+}
+
+.side-menu__label{
+color: gray;
+}
+
+/* HIDE RADIO */
+.buy_sell {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* SVG STYLES */
+.buy_sell + h4 {
+  cursor: pointer;
+  color:gray;
+
+}
+/* svg CHECKED STYLES */
+[type=radio]:checked + h4 {
+  color:white;
+}
+
+h4 {
+  border:0;
+  cursor: pointer;
+}
+[type=radio] + svg {
+  cursor: pointer;
+
+
+}
+
+svg {
+  border:0;
+  cursor: pointer;
+}
+
+.invisible input[type="checkbox"] {
+
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+}
+#footer ul{
+list-style: none;
+padding: 0px 0px 0px 0px;
+}
+#footer li{
+display: inline;
+list-style-type: none;
+padding-left: 10px;
+color:black;
+}
+#footer a{
+color:gray;
+}
