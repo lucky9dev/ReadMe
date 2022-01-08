@@ -398,6 +398,9 @@ header .navbar.sticky-header{
 
 .about-image img{
 	width: 100%;
+    margin-top: -77px;
+    background: white;
+    border-radius: 20px;
 }
 
 .about-content h3{
