@@ -95,8 +95,8 @@ a:focus{
     background: #ff5d56;
     -webkit-transform: translateY(0) rotate(45deg) scale(0);
     transform: translateY(0) rotate(45deg) scale(0);
-    -webkit-animation: diamonds 1500ms linear infinite;
-    animation: diamonds 1500ms linear infinite;
+    -webkit-animation: diamonds 500ms linear infinite;
+    animation: diamonds 500ms linear infinite;
 }
 
 .preloader .diamond:nth-child(1) {
