@@ -8,11 +8,22 @@
 /***** 	    General css		     ****/
 /************************************/
 
+
+html {
+	overflow:   scroll;
+  }
+  ::-webkit-scrollbar {
+	  width: 0px;
+	  background: transparent; /* make scrollbar transparent */
+  }
+
 body{
 	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 	background: #111;
 	color: #707070;
+	position: relative;
+	z-index: -1;
 }
 
 h1,
@@ -316,7 +327,7 @@ header .navbar.sticky-header{
 }
 
 .banner-content p{
-	color: #707070;
+	color: #e8dada;
 	font-size: 20px;
 	font-weight: 300;
 	margin-bottom: 1.5em;
@@ -329,7 +340,7 @@ header .navbar.sticky-header{
 	border-radius: 4px;
 	color: #fff;
 	transition: all 0.3s;
-	/* z-index: 2; */
+	z-index: 2;
 }
 
 .btn-download:hover{
@@ -384,25 +395,15 @@ header .navbar.sticky-header{
 	margin-bottom: 10px;
 }
 
-.about-image:after{
-	content: '';
-	display: block;
-	position: absolute;
-	top: 20px;
-	left: 20px;
-	right: -10px;
-	bottom: -10px;
-	border: 1px solid #222;
-	z-index: -1;
-}
 
 .about-image img{
 	width: 100%;
-    margin-top: -77px;
-    background: white;
+	margin-top: 22px !important;
     border-radius: 20px;
 }
-
+.about-content {
+	margin-top: 30px;
+}
 .about-content h3{
 	color: #fff;
 	font-weight: 400;
