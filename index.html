@@ -10,7 +10,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="Awaiken Theme">
 	<!-- Page Title -->
-	<title>Dennis Lee</title>
+	<title>Read Me</title>
 	<!-- Google Fonts css-->
 	<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash%7CRoboto:300,400,400i,500,500i,700,700i,900"
 		rel="stylesheet">
@@ -33,13 +33,76 @@
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 	<link href="css/particle.css" rel="stylesheet" media="screen">
 
-	<link rel="shortcut icon" href="./images/Dennis.png" type="image/x-icon">
+	<link rel="shortcut icon" href="./images/image.png" type="image/x-icon">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+  <script>
+    const personal_Info = {
+      first_name: "Terry",
+      last_name: "Milam",
+      introduce: "An experienced Full Stack Web Developer who has the strengths are in giving realistic promises, being responsive and responsible, concentrating on business needs and communications.",
+      based_on: "Henry, TN",
+      email: "toptowermilan@gmail.com",
+      skype_id: "x0x0x0x0x0x0x0",
+      contact_number: "7316134796",
+      links: {
+        resume_link:"",
+        skype_link:"",
+        linkedin_link:"",
+      },
+    }
+    const my_exp = {
+      education: {
+        name: "The University of Tennessee",
+        date_from: 2010,
+        date_to: 2014,
+        degree: "Bechalor's Degree",
+        field: "Computer Science"
+      },
+      career: {
+        name: "The University of Tennessee",
+        date_from: 2010,
+        date_to: 2014,
+        role: "Bechalor's Degree",
+        
+      },
+      skills: [
+        {title:"SCSS & SASS", exp:5},
+        {title:"JavaScript", exp:5},
+        {title:"ES5 & ES6", exp:5},
+        {title:"Typescript", exp:5},
+        {title:"React", exp:5},
+        {title:"Redux-saga", exp:5},
+        {title:"NodeJS", exp:5},
+        {title:"Socket.io", exp:5},
+        {title:"ExpressJS", exp:5},
+        {title:"MySQL & PostgreSQL", exp:5},
+        {title:"MongoDB", exp:5},
+        {title:"AWS", exp:5},
+      ]
+    }
+    const myservices = [
+      "Front-End Development", 
+      "Web Development", 
+      "Pixel-Perfect & Responsible", 
+      "Highly Scalable", 
+      "Clean Coding", 
+      "24 X 7 Support"
+    ]
+    const portfolio = {
+
+    }
+    text_out = (strlist) => {
+      if(typeof(strlist) === "object")
+        document.write(strlist.join(' '))
+      else
+        document.write(strlist)
+    }
+  </script>
 </head>
 
 <body data-spy="scroll" data-target="#main-navbar" data-offset="75">
@@ -60,7 +123,7 @@
 			<div class="container">
 				<!-- Navbar Brand start -->
 				<a class="navbar-brand" href="#">
-					<h1><span>Dennis</span> Lee</h1>
+					<h1><span><script>text_out(personal_Info.first_name)</script></span> <script>text_out(personal_Info.last_name)</script></h1>
 				</a>
 				<!-- Navbar Brand end -->
 
@@ -95,23 +158,21 @@
 					<!-- Banner Content Start -->
 					<div class="banner-content">
 						<h2 class="cd-headline clip">
-							<span class="before-heading">Hi , There! I'm </span>
+							<span class="before-heading">Hello , world! </span>
 							<span class="cd-words-wrapper">
-								<b>Full Stack Web Developer</b>
-								<b class="is-visible">Blockchain Developer</b>
-								<b>Web Designer</b>
+								<b>Full Stack Developer</b>
+								<b class="is-visible">Front-End Developer</b>
+								<b >React Developer</b>
 							</span>
 						</h2>
-						<p>An experienced Full Stack Web & Blockchain Developer who has the strengths are in giving realistic
-							promises, being responsive and responsible, concentrating on business needs and
-							communications. </p>
+						<p><script>text_out(personal_Info.introduce)</script></p>
 
-						<a href="https://drive.google.com/file/d/1J2SAul2VDAkTy73Hke_AWSwmeww93tdX/view?usp=sharing" class="btn-download">Download CV</a>
+						<a href="https://drive.google.com/file/d/1J2SAul2VDAkTy73Hke_AWSwmeww93tdX/view?usp=sharing" class="btn-download">Download Resume</a>
 					</div>
 					<!-- Banner Content End -->
 				</div>
 				<div class="col-lg-6" style="display: flex; justify-content: end; align-items:center;">
-					<img src="./images/Dennis.png" alt="" style="width: 50%;border-radius: 10%;">
+					<img src="./images/about.png" alt="" style="width: 50%;border-radius: 10%;">
 				</div>
 			</div>
 		</div>
@@ -136,7 +197,7 @@
 				<div class="col-lg-4" style="display: flex;align-items: end;">
 					<!-- About image start -->
 					<div class="about-image wow fadeInLeft" data-wow-delay="0.3s">
-						<img src="images/about.png" alt="" />
+						<img src="images/image.png" alt="" />
 					</div>
 					<!-- About image end -->
 				</div>
@@ -144,24 +205,38 @@
 				<div class="col-lg-8" style="display: flex;align-items: center;">
 					<!-- About Content start -->
 					<div class="about-content wow fadeInUp" data-wow-delay="0.8s">
-						<h3>I'm Dennis Lee</h3>
-						<p>A talented full-stack developer with 6 + years of well-rounded experience in web development,
-							object-oriented and user-centered design. Motivated designer and developer with experience
-							creating custom websites through many fields' skills and having Strong collaboration skills
-							and proven history of application development.</p>
+						<h3>I'm <script>text_out([personal_Info.first_name, personal_Info.last_name])</script></h3>
+						<p>A talented full-stack developer with <script>let curruent_date = new Date(); text_out(curruent_date.getFullYear()-2014)</script>+ years of well-rounded experience in web development,	object-oriented and user-centered front-end development. Motivated designer and developer with experience creating custom websites through many fields' skills and having Strong collaboration skills and proven history of application development.</p>
 
 						<p>Am passionate about solving challenging problems that others find difficult or
-							impossible.Providing technical, creative, and business insights to all projects I work on.
+							impossible. Providing technical, creative, and business insights to all projects I work on.
 						</p>
 
 						<ul>
-							<li><i class="flaticon-calendar"></i><b>Date of birth:</b> 16 April 1994</li>
-							<li><i class="flaticon-flag"></i><b>Nationality:</b> Chinesse</li>
-							<li><i class="flaticon-freelance"></i><b>Freelance:</b> Available</li>
-							<li><i class="flaticon-placeholder"></i><b>Address:</b> 9A MOSQUE STREET , SG</li>
-							<li><i class="flaticon-email"></i><b>Email:</b> golden.peach.ts@gmail.com</li>
-							<li><i class="flaticon-translation"></i><b>Spoken Langages:</b> Chinese - English</li>
-							<li style="width: 100%;"><i class="flaticon-skype"></i><b>Skype:</b> https://join.skype.com/invite/x9uVjXmB5LRY </li>
+							<!-- <li><i class="flaticon-calendar"></i><b>Date of birth:</b> April 2</li> -->
+							<li><i class="flaticon-freelance"></i><b>Freelance:</b>
+                Available
+              </li>
+							<li><i class="flaticon-placeholder"></i><b>Based on:</b> 
+                <script>
+                  text_out(personal_Info.based_on)
+                </script>
+              </li>
+							<li><i class="flaticon-email"></i><b>Email:</b> 
+                <script>
+                  text_out(personal_Info.email)
+                </script>
+              </li>
+							<li><i class="flaticon-phone"></i><b>Contact:</b> 
+                <script>
+                  text_out(personal_Info.contact_number)
+                </script>
+              </li>
+							<li style="width: 100%;"><i class="flaticon-skype"></i><b>Skype:</b> 
+                <script>
+                  text_out(personal_Info.skype_id)
+                </script> 
+              </li>
 						</ul>
 					</div>
 					<!-- About Content End -->
@@ -193,7 +268,7 @@
 							<i class="flaticon-idea"></i>
 						</div>
 
-						<h3>Web Design</h3>
+						<h3><script>text_out(myservices[0])</script></h3>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda voluptas</p> -->
 					</div>
 					<!-- Service Single End -->
@@ -206,7 +281,7 @@
 							<i class="flaticon-translation"></i>
 						</div>
 
-						<h3>Web Development</h3>
+						<h3><script>text_out(myservices[1])</script></h3>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda voluptas</p> -->
 					</div>
 					<!-- Service Single End -->
@@ -219,7 +294,7 @@
 							<i class="flaticon-controls"></i>
 						</div>
 
-						<h3>Photography</h3>
+						<h3><script>text_out(myservices[2])</script></h3>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda voluptas</p> -->
 					</div>
 					<!-- Service Single End -->
@@ -232,7 +307,7 @@
 							<i class="flaticon-growth"></i>
 						</div>
 
-						<h3>SEO Analyst</h3>
+						<h3><script>text_out(myservices[3])</script></h3>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda voluptas</p> -->
 					</div>
 					<!-- Service Single End -->
@@ -245,7 +320,7 @@
 							<i class="flaticon-quality"></i>
 						</div>
 
-						<h3>Clean Coding</h3>
+						<h3><script>text_out(myservices[4])</script></h3>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda voluptas</p> -->
 					</div>
 					<!-- Service Single End -->
@@ -258,7 +333,7 @@
 							<i class="flaticon-support"></i>
 						</div>
 
-						<h3>24 X 7 Support</h3>
+						<h3><script>text_out(myservices[5])</script></h3>
 						<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus assumenda voluptas</p> -->
 					</div>
 					<!-- Service Single End -->
@@ -366,6 +441,7 @@
 					</div>
 				</div>
 
+        <!-- Education -->
 				<div class="col-md-12">
 					<div class="education">
 						<h3 class="sub-title"><i class="fa fa-graduation-cap"></i> Education</h3>
@@ -376,9 +452,25 @@
 								<!-- Experience Slide start -->
 								<div class="swiper-slide">
 									<div class="experience-single">
-										<h5>2012 - 2016</h5>
-										<h4>Computer Science - Bachelor's Degree</h4>
-										<p>Nanyang Technological University</p>
+										<h5>
+                      <script>
+                        text_out([
+                          my_exp.education.date_from,
+                          '-',
+                          my_exp.education.date_to,
+                        ])
+                      </script>
+                    </h5>
+										<h4>
+                      <script>
+                        text_out([
+                          my_exp.education.degree,
+                          '-',
+                          my_exp.education.field,
+                        ])
+                      </script>
+                    </h4>
+										<p><script>text_out(my_exp.education.name)</script></p>
 									</div>
 								</div>
 								<!-- Experience Slide end -->
@@ -393,7 +485,8 @@
 					</div>
 				</div>
 			</div>
-
+						
+      <!-- Skills -->
 			<div class="row">
 				<div class="col-md-12">
 					<div class="skill">
@@ -407,11 +500,11 @@
 									<div class="skill-single">
 										<h5>React</h5>
 										<div class="skill-ratting">
-											<i class="fa fa-star-o"></i>
-											<i class="fa fa-star-o"></i>
-											<i class="fa fa-star-o"></i>
-											<i class="fa fa-star-o"></i>
-											<i class="fa fa-star-o"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
 										</div>
 									</div>
 									<!-- Skill Single End -->
@@ -967,32 +1060,45 @@
 	<div class="contact-information">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<!-- Contact info single start -->
-					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.3s">
-						<h3>Address</h3>
-						<p>9A MOSQUE STREET , SG</p>
-					</div>
-					<!-- Contact info single end -->
-				</div>
 
-				<div class="col-lg-4">
-					<!-- Contact info single start -->
-					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.6s">
-						<h3>Telegram</h3>
-						<p>@golden_t_s </p>
-					</div>
-					<!-- Contact info single end -->
-				</div>
-
-				<div class="col-lg-4">
+        <div class="col-lg-4">
 					<!-- Contact info single start -->
 					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.9s">
 						<h3>Email</h3>
-						<p>golden.peach.ts@gmail.com</p>
+						<p>
+              <script>
+                text_out(personal_Info.email)
+              </script>
+            </p>
 					</div>
 					<!-- Contact info single end -->
 				</div>
+
+        <div class="col-lg-4">
+					<!-- Contact info single start -->
+					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.3s">
+						<h3>Number</h3>
+						<p>
+              <script>
+                text_out(personal_Info.contact_number)
+              </script> </p>
+					</div>
+					<!-- Contact info single end -->
+				</div>
+
+        <div class="col-lg-4">
+					<!-- Contact info single start -->
+					<div class="contact-info-single wow fadeInUp" data-wow-delay="0.6s">
+						<h3>Skype</h3>
+						<p>
+              <script>
+                text_out(personal_Info.skype_id)
+              </script> 
+            </p>
+					</div>
+					<!-- Contact info single end -->
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -1005,27 +1111,27 @@
 				<div class="col-md-12">
 					<!-- Footer Logo start -->
 					<div class="footer-logo">
-						<h1><span>Dennis</span> Lee</h1>
+						<h1><span><script>text_out(personal_Info.first_name)</script></span> <script>text_out(personal_Info.last_name)</script></h1>
 					</div>
 					<!-- Footer Logo end -->
 
 					<!-- Footer About start -->
 					<div class="footer-about">
-						<p>An experienced Full Stack Blockchain Developer who has the strengths are in giving realistic promises, being responsive and responsible, concentrating on business needs and communications.</p>
+						<p>An experienced Full Stack Developer who has the strengths are in giving realistic promises, being responsive and responsible, concentrating on business needs and communications.</p>
 					</div>
 					<!-- Footer About end -->
 
 					<!-- Footer Social Link start -->
 					<div class="footer-social">
-						<a href="https://join.skype.com/invite/x9uVjXmB5LRY"><i class="fa fa-skype"></i></a>
-						<a href="https://t.me/@golden_t_s"><i class="fa fa-telegram"></i></a>
+            <a href="https://t.me/@golden_t_s"><i class="fa fa-telegram"></i></a>
 						<a href="mailto:golden.peach.ts@gmail.com"><i class="fa fa-envelope"></i></a>
+						<a href="https://join.skype.com/invite/x9uVjXmB5LRY"><i class="fa fa-skype"></i></a>
 					</div>
 					<!-- Footer Social Link end -->
 
 					<!-- Footer Copyright start -->
 					<div class="footer-copyright">
-						<p>Copyright &copy; Untitled. All rights reserved. Design By <b>Dennis Lee</b></p>
+						<p>Copyright &copy; Untitled. All rights reserved. Design By <b><script>text_out([personal_Info.first_name, personal_Info.last_name])</script></b></p>
 					</div>
 					<!-- Footer Copyright end -->
 				</div>

@@ -3,7 +3,7 @@
 	Author 			: Awaiken Theme
 	Author Url 		: https://awaikenthemes.com
 */
-
+/* ff5d56 */
 /************************************/
 /***** 	    General css		     ****/
 /************************************/
@@ -92,7 +92,7 @@ a:focus{
     width: 30px;
     height: 30px;
     border-radius: 2px;
-    background: #ff5d56;
+    background: #34A853;
     -webkit-transform: translateY(0) rotate(45deg) scale(0);
     transform: translateY(0) rotate(45deg) scale(0);
     -webkit-animation: diamonds 1500ms linear infinite;
@@ -176,7 +176,7 @@ a:focus{
 
 header .navbar{
 	padding: 0;
-	background: rgba(0,0,0,0.4);
+	background: rgba(0,0,0,0.7);
 	z-index: 40;
 	transition: all 0.3s;
 }
@@ -190,7 +190,7 @@ header .navbar{
 }
 
 .navbar-brand h1 span{
-	color: #ff5d56;
+	color: #34A853;
 }
 
 header .navbar-collapse.collapse{
@@ -217,7 +217,7 @@ header .navbar-collapse.collapse{
 
 .navbar .navbar-nav .nav-link.active{
 	background: none;
-	color: #ff5d56;
+	color: #34A853;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -227,7 +227,7 @@ header .navbar-collapse.collapse{
 
 .navbar .navbar-nav .nav-link.active:hover,
 .navbar .navbar-nav .nav-link.active:focus{
-	color: #ff5d56;
+	color: #34A853;
 }
 
 header .navbar.sticky-header{
@@ -284,7 +284,7 @@ header .navbar.sticky-header{
 
 .slicknav_nav a:hover{
 	background: none;
-	color: #ff5d56;
+	color: #34A853;
 }
 
 /************************************/
@@ -341,10 +341,14 @@ header .navbar.sticky-header{
 }
 
 .btn-download:hover{
-	border-color: #ff5d56;
-	color: #ff5d56;
+	border-color: #34A853;
+	color: #34A853;
 }
 
+.cd-words-wrapper>b{
+	color: white;
+	font-weight: 800;
+}
 /**************************************/
 /*****     About us Section css    ****/
 /**************************************/
@@ -371,11 +375,11 @@ header .navbar.sticky-header{
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	border-bottom: 10px dotted #ff5d56;
+	border-bottom: 10px dotted #34A853;
 }
 
 .section-title h2{
-	color: #ff5d56;
+	color: #34A853;
 	font-family: 'Berkshire Swash', cursive;
 	font-weight: normal;
 	font-size: 36px;
@@ -415,7 +419,7 @@ header .navbar.sticky-header{
 	display: block;
 	width: 40px;
 	height: 4px;
-	background: #ff5d56;
+	background: #34A853;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -452,7 +456,7 @@ header .navbar.sticky-header{
 }
 
 .about-content ul li i{
-	color: #ff5d56;
+	color: #34A853;
 	font-size: 20px;
 	position: absolute;
 	top: 0;
@@ -486,8 +490,8 @@ header .navbar.sticky-header{
 	left: -1px;
 	right: -1px;
 	bottom: -1px;
-	border-top: 1px solid #ff5d56;
-	border-bottom: 1px solid #ff5d56;
+	border-top: 1px solid #34A853;
+	border-bottom: 1px solid #34A853;
 	transform: scale(0,1);
 	transition: all 0.6s;
 }
@@ -500,8 +504,8 @@ header .navbar.sticky-header{
 	left: -1px;
 	right: -1px;
 	bottom: -1px;
-	border-left: 1px solid #ff5d56;
-	border-right: 1px solid #ff5d56;
+	border-left: 1px solid #34A853;
+	border-right: 1px solid #34A853;
 	transform: scale(1,0);
 	transition: all 0.6s;
 }
@@ -512,7 +516,7 @@ header .navbar.sticky-header{
 }
 
 .service-single .icon-box{
-	color: #ff5d56;
+	color: #34A853;
 	font-size: 60px;
 	line-height: 1em;
 	margin-bottom: 26px;
@@ -542,7 +546,7 @@ header .navbar.sticky-header{
 	color: #fff;
 	font-size: 18px;
 	font-weight: 400;
-	background: #ff5d56;
+	background: #34A853;
 	padding: 14px 20px;
 	text-transform: uppercase;
 	margin-bottom: 50px;
@@ -573,7 +577,7 @@ header .navbar.sticky-header{
 }
 
 .experience-single h5{
-	color: #ff5d56;
+	color: #34A853;
 	font-weight: 400;
 }
 
@@ -607,7 +611,7 @@ header .navbar.sticky-header{
 
 .education-pagination .swiper-pagination-bullet-active,
 .experience-pagination .swiper-pagination-bullet-active{
-	border-color: #ff5d56;
+	border-color: #34A853;
 }
 
 .skill-single{
@@ -625,9 +629,9 @@ header .navbar.sticky-header{
 
 .skill-ratting{
 	font-size: 20px;
-	color: #ff5d56;
+	color: #34A853;
 }
-
+ 
 .counter-single{
 	background: #222;
 	border: 1px solid #333;
@@ -640,7 +644,7 @@ header .navbar.sticky-header{
 
 .counter-single .icon-box{
 	font-size: 50px;
-	color: #ff5d56;
+	color: #34A853;
 	line-height: 80px;
 	margin-bottom: 10px;
 	width: 80px;
@@ -698,9 +702,9 @@ header .navbar.sticky-header{
 }
 
 .portfolio-nav ul li a.active-portfolio{
-	background: #ff5d56;
+	background: #34A853;
 	color: #fff;
-	border-color: #ff5d56;
+	border-color: #34A853;
 }
 
 .single-portfolio{
@@ -733,7 +737,7 @@ header .navbar.sticky-header{
 .single-portfolio-overlay h3{
 	font-weight: 400;
 	font-size: 16px;
-	color: #ff5d56;
+	color: #34A853;
 	opacity: 0;
 	transition: all 0.8s;
 }
@@ -778,7 +782,7 @@ header .navbar.sticky-header{
 
 .mfp-content .content .desc h5{
 	font-size: 16px;
-	color: #ff5d56;
+	color: #34A853;
 	font-weight: 400;
 	margin-bottom: 20px;
 }
@@ -799,8 +803,8 @@ header .navbar.sticky-header{
 }
 
 .btn-view-project:hover{
-	border-color: #ff5d56;
-	color: #ff5d56;
+	border-color: #34A853;
+	color: #34A853;
 	background: none;
 }
 
@@ -824,8 +828,8 @@ header .navbar.sticky-header{
 }
 
 .load-more-portfolio a:hover{
-	border-color: #ff5d56;
-	color: #ff5d56;
+	border-color: #34A853;
+	color: #34A853;
 }
 
 /***************************************/
@@ -864,8 +868,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-top: 1px solid #ff5d56;
-    border-bottom: 1px solid #ff5d56;
+    border-top: 1px solid #34A853;
+    border-bottom: 1px solid #34A853;
     transform: scale(0,1);
     transition: all 0.6s;
 }
@@ -878,8 +882,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-left: 1px solid #ff5d56;
-    border-right: 1px solid #ff5d56;
+    border-left: 1px solid #34A853;
+    border-right: 1px solid #34A853;
     transform: scale(1,0);
     transition: all 0.6s;
 }
@@ -925,8 +929,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-top: 1px solid #ff5d56;
-    border-bottom: 1px solid #ff5d56;
+    border-top: 1px solid #34A853;
+    border-bottom: 1px solid #34A853;
     transform: scale(0,1);
     transition: all 0.6s;
 }
@@ -939,8 +943,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-left: 1px solid #ff5d56;
-    border-right: 1px solid #ff5d56;
+    border-left: 1px solid #34A853;
+    border-right: 1px solid #34A853;
     transform: scale(1,0);
     transition: all 0.6s;
 }
@@ -954,7 +958,7 @@ header .navbar.sticky-header{
 
 .pricing-header .icon-box{
 	font-size: 40px;
-	color: #ff5d56;
+	color: #34A853;
     line-height: 1em;
 	margin-bottom: 10px;
 }
@@ -1006,14 +1010,14 @@ header .navbar.sticky-header{
 
 .btn-buynow{
 	display: inline-block;
-	border: 1px solid #ff5d56;
-	color: #ff5d56;
+	border: 1px solid #34A853;
+	color: #34A853;
 	padding: 10px 30px;
 	transition: all 0.4s;
 }
 
 .btn-buynow:hover{
-	background: #ff5d56;
+	background: #34A853;
 	color: #fff;
 }
 
@@ -1026,7 +1030,7 @@ header .navbar.sticky-header{
 	position: absolute;
     left: -30px;
     top: 16px;
-    background: #ff5d56;
+    background: #34A853;
     width: 130px;
     color: #fff;
     padding: 6px;
@@ -1076,7 +1080,7 @@ header .navbar.sticky-header{
 	display: block;
 	width: 32px;
 	height: 32px;
-	background: #ff5d56;
+	background: #34A853;
 	color: #fff;
 	line-height: 32px;
 	font-size: 14px;
@@ -1103,7 +1107,7 @@ header .navbar.sticky-header{
 .testimonial-header h4{
 	font-size: 18px;
 	font-weight: 400;
-	color: #ff5d56;
+	color: #34A853;
 }
 
 .testimonial-single p{
@@ -1126,7 +1130,7 @@ header .navbar.sticky-header{
 }
 
 .testimonial-pagination .swiper-pagination-bullet-active{
-	background: #ff5d56;
+	background: #34A853;
 }
 
 /*******************************************/
@@ -1146,7 +1150,7 @@ header .navbar.sticky-header{
 .newsletter-content h3{
     font-family: 'Berkshire Swash', cursive;
 	font-weight: normal;
-	color: #ff5d56;	
+	color: #34A853;	
 }
 
 .newsletter-content p{
@@ -1187,7 +1191,7 @@ header .navbar.sticky-header{
 	width: 20%;
 	background: none;
 	border: none;
-	color: #ff5d56;
+	color: #34A853;
 	font-size: 40px;
 	text-align: right;
 	padding: 0 30px;
@@ -1239,8 +1243,8 @@ header .navbar.sticky-header{
 	display: block;
 	width: 50px;
 	height: 50px;
-	background: #ff5d56;
-	border: 1px solid #ff5d56;
+	background: #34A853;
+	border: 1px solid #34A853;
 	font-size: 20px;
 	color: #fff;
 	line-height: 50px;
@@ -1255,7 +1259,7 @@ header .navbar.sticky-header{
 
 .blog-header-overlay a:hover{
 	background: none;
-	color: #ff5d56;
+	color: #34A853;
 }
 
 .blog-header figure{
@@ -1299,7 +1303,7 @@ header .navbar.sticky-header{
 }
 
 .blog-footer ul li i{
-	color: #ff5d56;
+	color: #34A853;
 	margin-right: 6px;
 }
 
@@ -1350,8 +1354,8 @@ header .navbar.sticky-header{
 .btn-contact{
 	background: none;
 	display: inline-block;
-    border: 1px solid #ff5d56;
-    color: #ff5d56;
+    border: 1px solid #34A853;
+    color: #34A853;
     padding: 12px 30px;
 	cursor: pointer;
 	margin-top: 20px;
@@ -1359,7 +1363,7 @@ header .navbar.sticky-header{
 }
 
 .btn-contact:hover{
-	background: #ff5d56;
+	background: #34A853;
 	color: #fff;
 }
 
@@ -1387,8 +1391,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-top: 1px solid #ff5d56;
-    border-bottom: 1px solid #ff5d56;
+    border-top: 1px solid #34A853;
+    border-bottom: 1px solid #34A853;
     transform: scale(0,1);
     transition: all 0.6s;
 }
@@ -1401,8 +1405,8 @@ header .navbar.sticky-header{
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border-left: 1px solid #ff5d56;
-    border-right: 1px solid #ff5d56;
+    border-left: 1px solid #34A853;
+    border-right: 1px solid #34A853;
     transform: scale(1,0);
     transition: all 0.6s;
 }
@@ -1428,7 +1432,7 @@ header .navbar.sticky-header{
 	width: 40px;
 	margin-left: -20px;
 	height: 3px;
-	background: #ff5d56;
+	background: #34A853;
 	position: absolute;
 	left: 50%;
 	bottom: 0;
@@ -1461,7 +1465,7 @@ header .navbar.sticky-header{
 }
 
 .footer-logo h1 span{
-	color: #ff5d56;
+	color: #34A853;
 }
 
 .footer-about{
@@ -1496,8 +1500,8 @@ header .navbar.sticky-header{
 
 .footer-social a:hover{
 	background: none;
-	border-color: #ff5d56;
-	color: #ff5d56;
+	border-color: #34A853;
+	color: #34A853;
 }
 
 .footer-copyright{
@@ -1532,7 +1536,7 @@ header .navbar.sticky-header{
 }
 
 .footer-copyright p a:hover{
-	color: #ff5d56;
+	color: #34A853;
 }
 
 /*********************************/
