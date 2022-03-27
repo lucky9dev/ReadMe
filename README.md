@@ -6,4 +6,4 @@
 
 <img src="https://github.com/lucky9dev/lucky9dev/tree/master/images/Houzz/0.jpg" alt="Error!"> 
 
-![The San Juan Mountains are beautiful!](./assets/images/Houzz/0.jpg "San Juan Mountains")
+![The San Juan Mountains are beautiful!](../../assets/images/Houzz/0.jpg "San Juan Mountains")
